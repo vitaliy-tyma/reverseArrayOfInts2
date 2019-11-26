@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Service {
 
-    public static void goWithPrimitives(int [] nums) {
+    public void goWithPrimitives(int [] nums) {
 
-        List<Integer> numsList = new ArrayList<Integer>(nums.length);
+        List<Integer> numsList = new ArrayList<>(nums.length);
         for (int num : nums){
             numsList.add(num);
         }
@@ -31,7 +31,7 @@ public class Service {
         System.out.println(Arrays.toString(resultNums));
     }
 
-    public static void goWithObjects(Integer[] nums) throws IllegalArgumentException{
+    public void goWithObjects(Integer[] nums) throws IllegalArgumentException{
 
         //Validate the input
         int i = 0;
