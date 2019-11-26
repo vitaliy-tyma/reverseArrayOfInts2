@@ -1,4 +1,7 @@
+import util.IncrementService;
 import util.Service;
+
+import java.util.Arrays;
 
 
 public class AppRunner2 {
@@ -18,5 +21,10 @@ public class AppRunner2 {
             System.out.println("Processing has been interrupted.");
         }
 
+        System.out.println("\nStart with Incrementing Objects");
+        Integer[] nums3 = {1, 4, 5, -8, 0, 4, 2, 45, 788, 234};
+        Integer[] integers = new IncrementService().goWithObjects(nums3);
+        System.out.println("Integers:");
+        System.out.println(Arrays.toString(integers));
     }
 }
