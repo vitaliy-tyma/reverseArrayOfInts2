@@ -22,9 +22,11 @@ public class AppRunner2 {
         }
 
         System.out.println("\nStart with Incrementing Objects");
-        Integer[] nums3 = {1, 4, 5, -8, 0, 4, 2, 45, 788, 234};
+        Integer[] nums3 = {-9, 4, 5, 8, 0, 4, 2, 5, 9, 9};
         Integer[] integers = new IncrementService().goWithObjects(nums3);
-        System.out.println("Integers:");
+        System.out.println("Integers source:");
+        System.out.println(Arrays.toString(nums3));
+        System.out.println("Integers incremented:");
         System.out.println(Arrays.toString(integers));
     }
 }
