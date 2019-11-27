@@ -19,7 +19,7 @@ public class AppRunner2 {
             System.out.println("IllegalArgumentException 1: " + e.getMessage());
             System.out.println("Processing has been interrupted.");
         } finally {
-            System.out.println("Finally clause.");
+            System.out.println("Finally clause 3.");
         }
 
         System.out.println("\nStart with Incrementing Objects");
