@@ -17,8 +17,9 @@ public class AppRunner2 {
             new Service().goWithObjects(nums2);
         } catch (IllegalArgumentException e) {
             System.out.println("IllegalArgumentException 1: " + e.getMessage());
-        } finally {
             System.out.println("Processing has been interrupted.");
+        } finally {
+            System.out.println("Finally clause.");
         }
 
         System.out.println("\nStart with Incrementing Objects");
