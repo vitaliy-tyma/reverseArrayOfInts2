@@ -29,5 +29,14 @@ public class AppRunner2 {
         System.out.println(Arrays.toString(nums3));
         System.out.println("Integers incremented:");
         System.out.println(Arrays.toString(integers));
+
+
+        System.out.println("\nStart with Incrementing Objects");
+        Integer[] nums4 = {-9, 4, null, 8, 0, null, 2, 5, 9, 9};
+        Integer[] integers4 = new IncrementService().goWithObjects(nums4);
+        System.out.println("Integers source:");
+        System.out.println(Arrays.toString(nums4));
+        System.out.println("Integers incremented:");
+        System.out.println(Arrays.toString(integers4));
     }
 }
